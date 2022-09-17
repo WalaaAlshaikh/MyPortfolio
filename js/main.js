@@ -115,3 +115,33 @@
     
 })(jQuery);
 
+function sending()
+
+{
+var templateParams = {
+    from_name: document.getElementById("name").value,
+    to_name:"Walaa",
+    message: document.getElementById("message").value,
+    subject: document.getElementById("subject").value,
+    email: document.getElementById("email").value
+};
+ 
+emailjs.send('service_vj81s3o', 'template_19ka6zg', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+};
+
+const reloadtButton = document.querySelector("#reload");
+// Reload everything:
+function reload() {
+    reload = location.reload();
+}
+// Event listeners for reload
+reloadButton.addEventListener("click", reload, false);
+
+
+
+
