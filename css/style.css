@@ -526,8 +526,11 @@ mark,
 }
 
 .img-fluid {
+  width: 350px;
+  height: 350px;
+}
+.img-fluid1{
   max-width: 100%;
-  height: auto;
 }
 
 .img-thumbnail {
@@ -4135,6 +4138,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  margin: auto;
 }
 
 .navbar-nav .nav-link {
@@ -6484,7 +6488,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #0BCEAF !important;
+  border-color: #491217 !important;
 }
 
 .border-secondary {
